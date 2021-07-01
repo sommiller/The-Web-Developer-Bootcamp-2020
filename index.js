@@ -23,3 +23,13 @@ const returnDay = (num) => {
       }
       return (days[num]);
   }
+
+// Alternative Solution
+const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+function returnDay(num) {
+    if (num < 1 || num > 7) {
+       return null;
+    } else {
+        return (days[num - 1]);
+    }
+}
